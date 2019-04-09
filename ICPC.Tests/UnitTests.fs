@@ -11,7 +11,7 @@ let ``Comma sprinkler, input 1`` () =
 [<Test>]
 let ``Comma sprinkler, input 2`` () =
     commaSprinkler "one, two. one tree. four tree. four four. five four. six five."
-    |> should equal (Some "one, two. one, tree. four, tree. four, four. five, four. six five.")
+    |> should equal ["one,"; "two."; "one"; "tree."; "four"; "tree."; "four"; "four."; "five"; "four."; "six"; "five."]//(Some "one, two. one, tree. four, tree. four, four. five, four. six five.")
 
 [<Test>]
 let ``Comma sprinkler, input 3`` () =
